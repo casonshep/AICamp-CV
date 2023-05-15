@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>TCY - Turtle Classification, yes.</title>
+        <link rel="icon" type="image/x-icon" href="../static/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../static/css/main.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="#page-top">Turtle Classification</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">The Context</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#upload">Upload</a></li>
+                      <li class="nav-item"><a class="nav-link" href="https://www.ai-camp.org/">AI Camp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="d-flex justify-content-center">
+                    <div class="text-center">
+                        <h1 class="mx-auto my-0 text-uppercase">Turtles</h1>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">
+                            A short project designed to detect a few species of turtle.
+                        </h2>
+                    <a class="btn btn-secondary" href="#projects">Why is this project important?</a>
+                    <a class="btn btn-primary" href="#upload">Try it out!</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8"><img class="img-fluid" src="static/images/tutle_wallpaper.jpg" alt="..." />
+                        <h2 class="text-white mb-4">Built with Bootstrap 5, Flask, and a number of amazing libraries</h2>
+                        <p class="text-white-50">
+                            <i>Turtle Classification, yes.</i> is my project for the Computer Vision section of the AI Camp crash course curriculum! This project was intended for use identifying species of turtles that users encounter wherever they may be. This project uses a machine learning model to classify images of turtles as either a Loggerhead Sea Turtle, Red-Eared Slider, Bog Turtle, or Snapping Turtle. The model was trained on 400 images. The model is a simple convolutional neural network, and was trained using the Transformers library. The web app was built using Flask, and the front end was built using Bootstrap 5. The model was trained on Google Colab, and the web app is hosted through replit.
+                        </p>
+                        <p class="text-white-50">
+                            I started by using a modified script from SerpAPI to scrape the dataset from Google Images. I then used Roboflow to label the images into the four turtle categories: Loggerhead, Bog, Red-Eared Slider, and Snapping. At this point it was relatively simple to download the images through the Roboflow API, and process them in a Google Colab notebook with the Transformers library. The trained model was then uploaded to HuggingFace, and the web app was built using Flask, using the model and HuggingFace's inference APIs to make calls to the model.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="static/images/small_turtle_wallpaper.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Why is this important?</h4>
+                            <p class="text-black-50 mb-0">Currently, over half of the ocean's species of seas turtle are classified as endangered. These are due to the actions of human's, and our poor care for our oceans. </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project One Row-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div class="col-lg-6"><img class="img-fluid" src="static/images/turtle.jpg" height=900 /></div>
+                    <div class="col-lg-6">
+                        <div class="bg-black text-center h-100 project">
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left">
+                                    <h4 class="text-white">Species Tracking</h4>
+                                    <p class="mb-0 text-white-50">
+                                    In addition to taking care of turtles, it is crucial to monitor different turtle species for several reasons. Firstly, monitoring helps us understand the population dynamics, distribution, and habitat requirements of each species. This knowledge allows us to implement effective conservation strategies tailored to the specific needs of different turtle populations. Secondly, monitoring helps identify any declines or changes in species abundance, which can be early indicators of environmental disturbances or threats. Lastly, monitoring different species provides valuable scientific data that contributes to broader research efforts and our understanding of ecosystem health and functioning. Through comprehensive monitoring programs, we can ensure the long-term survival and well-being of turtles and the ecosystems they inhabit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="upload">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-white mb-5">Upload an image to receive an approximate classification!</h2>
+                        <h2 class="text-white mb-5">Snapping Turtle, Bog Turtle, Red-Eared Slider, Snapping Turtle</h2>
+                            <form method=post enctype=multipart/form-data>
+                            <font color="white">
+                                <input type=file name=file>
+                                <input type=submit value=Upload>
+                            </font>
+                            </form>
+                            {% for mesg in get_flashed_messages() %}
+                                <h1>{{ mesg }}</h1>
+                            {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="mailto:cshepard@caltech.edu">cshepard@caltech.edu</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Cason Shepard</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../static/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
